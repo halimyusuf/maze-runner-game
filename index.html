@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Matter game</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="content">
+            <h2>Difficulty</h2>
+            <div class="easy">
+                <button>Easy</button>
+            </div>
+            <div class="medium">
+                <button>Medium</button>
+            </div>
+            <div class="hard">
+                <button>Hard</button>
+            </div>
+            <div class="expert">
+                <button>Expert</button>
+            </div>
+        </div>
+    </div>
+    <div id="maze-game">
+        <div class="msg-container hidden">
+            <div class="message">
+                You Win
+                <div class="score">
+
+                </div>
+                <div class="act-btn">
+                    <button id="restart">Restart</button>
+                    <button id="home">Home</button>
+                </div>
+                <p class="reload hidden"> Please Reload <span>☺</span> </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <script src="./maze_algo.js"></script>
+    <script src="./maze_bodies.js"></script>
+    <script src="./maze-events.js"></script>
+    <script src="./maze-game.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
